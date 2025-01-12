@@ -251,14 +251,19 @@ Note that you will need to complete all five (0-4) seeds. This is because we rep
 If our work was helpful for your work, please be so kind as to cite us:
 
 ```
-@article{lagonn_2023,
-doi = {10.48550/ARXIV.2302.08957},
-url = {https://arxiv.org/abs/2302.08957},
-author = {Bates, Luke and Gurevych, Iryna},
-keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-journal={arXiv preprint arXiv:2302.08957},
-title = {Like a Good Nearest Neighbor: Practical Content Moderation and Text Classification},
-publisher = {arXiv},
-year = {2024},
-copyright = {Creative Commons Attribution 4.0 International}}
+@inproceedings{bates-gurevych-2024-like,
+    title = "Like a Good Nearest Neighbor: Practical Content Moderation and Text Classification",
+    author = "Bates, Luke  and
+      Gurevych, Iryna",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.17/",
+    pages = "276--297",
+    abstract = "Few-shot text classification systems have impressive capabilities but are infeasible to deploy and use reliably due to their dependence on prompting and billion-parameter language models. SetFit (Tunstall, 2022) is a recent, practical approach that fine-tunes a Sentence Transformer under a contrastive learning paradigm and achieves similar results to more unwieldy systems. Inexpensive text classification is important for addressing the problem of domain drift in all classification tasks, and especially in detecting harmful content, which plagues social media platforms. Here, we propose Like a Good Nearest Neighbor (LaGoNN), a modification to SetFit that introduces no learnable parameters but alters input text with information from its nearest neighbor, for example, the label and text, in the training data, making novel data appear similar to an instance on which the model was optimized. LaGoNN is effective at flagging undesirable content and text classification, and improves SetFit`s performance. To demonstrate LaGoNN`s value, we conduct a thorough study of text classification systems in the context of content moderation under four label distributions, and in general and multilingual classification settings."
+}
 ```
